@@ -1,5 +1,5 @@
 /**
- * VR Adventures — Main JavaScript
+ * VR Adventures - Main JavaScript
  * Mobile nav, scroll effects, reveal animations, hero slideshow, language toggle
  */
 (function () {
@@ -172,7 +172,7 @@
 
       // Hero
       hero_title: 'We Bring VR<br>To Your Event',
-      hero_subtitle: 'No venue needed. No hassle. We deliver a complete free-roam VR experience\u00a0\u2014\u00a0anywhere in the Netherlands.',
+      hero_subtitle: 'No venue needed. No hassle. We deliver a complete free-roam VR experience. Anywhere in the Netherlands.',
       hero_cta1: 'Book Your Event',
       hero_cta2: 'How Does It Work?',
 
@@ -181,7 +181,7 @@
       step1_title: 'Pick Your Date',
       step1_text: 'Tell us when, where, and how many guests. We handle the rest.',
       step2_title: 'We Set Up',
-      step2_text: 'Our crew arrives, builds the arena, and gets everything running\u00a0\u2014\u00a0at your location.',
+      step2_text: 'Our crew arrives, builds the arena, and gets everything running. At your location.',
       step3_title: 'Play Together',
       step3_text: 'Your guests jump into multiplayer VR worlds. 6\u20138 players per round, unlimited fun.',
 
@@ -189,7 +189,7 @@
       exp_title: 'Choose Your Adventure',
       exp_subtitle: 'Large play areas. Multiple game worlds. All unforgettable.',
       card1_title: 'Play Together',
-      card1_text: 'Work together as a team in thrilling VR worlds. Survive together, protect each other, and build trust\u00a0\u2014\u00a0the ultimate team building.',
+      card1_text: 'Work together as a team in thrilling VR worlds. Survive together, protect each other, and build trust. The ultimate team building.',
       card2_title: 'Challenge Each Other',
       card2_text: 'Challenge your friends or colleagues in an epic showdown. Who\u2019s the best? Competitive, exciting, and unforgettable.',
       tag_coop: 'Co-op',
@@ -235,20 +235,20 @@
       nav_contact: 'Contact',
       skip: 'Ga naar inhoud',
       hero_title: 'Wij Brengen VR<br>Naar Jouw Event',
-      hero_subtitle: 'Geen locatie nodig. Geen gedoe. Wij leveren een complete free-roam VR ervaring\u00a0\u2014\u00a0overal in Nederland.',
+      hero_subtitle: 'Geen locatie nodig. Geen gedoe. Wij leveren een complete free-roam VR ervaring. Overal in Nederland.',
       hero_cta1: 'Boek Jouw Event',
       hero_cta2: 'Hoe Werkt Het?',
       steps_title: 'Drie Stappen. Nul Gedoe.',
       step1_title: 'Kies Je Datum',
       step1_text: 'Vertel ons wanneer, waar en met hoeveel gasten. Wij regelen de rest.',
       step2_title: 'Wij Bouwen Op',
-      step2_text: 'Ons team komt langs, bouwt de arena op en maakt alles speelklaar\u00a0\u2014\u00a0op jouw locatie.',
+      step2_text: 'Ons team komt langs, bouwt de arena op en maakt alles speelklaar. Op jouw locatie.',
       step3_title: 'Speel Samen',
       step3_text: 'Jouw gasten duiken in multiplayer VR werelden. 6-8 spelers per ronde, oneindig veel plezier.',
       exp_title: 'Kies Je Avontuur',
       exp_subtitle: 'Grote speelruimtes. Meerdere gamewerelden. Allemaal onvergetelijk.',
       card1_title: 'Samen Spelen',
-      card1_text: 'Werk samen als team in spannende VR werelden. Overleef samen, bescherm elkaar en bouw aan vertrouwen\u00a0\u2014\u00a0de ultieme teambuilding.',
+      card1_text: 'Werk samen als team in spannende VR werelden. Overleef samen, bescherm elkaar en bouw aan vertrouwen. De ultieme teambuilding.',
       card2_title: 'Tegen Elkaar',
       card2_text: 'Daag je vrienden of collega\u2019s uit in een episch gevecht. Wie is de beste? Competitief, spannend en onvergetelijk.',
       tag_coop: 'Co-op',
