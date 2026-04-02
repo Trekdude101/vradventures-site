@@ -181,6 +181,23 @@ body {
   box-shadow: var(--shadow-nav);
 }
 
+.site-header:not(.scrolled) .nav {
+  color: var(--color-white);
+}
+
+.site-header:not(.scrolled) .nav__logo-icon {
+  filter: brightness(0) invert(1);
+}
+
+.site-header:not(.scrolled) .nav__toggle-bar {
+  background-color: var(--color-white);
+}
+
+.site-header:not(.scrolled) .lang-toggle {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
 .nav {
   display: flex;
   align-items: center;
