@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Adventures — Wij Brengen VR Naar Jouw Event</title>
+  <meta name="description" content="VR Adventures brengt free-roam VR gaming naar jouw locatie. Bedrijfsuitjes, feesten, festivals — wij regelen alles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link" data-i18n="skip">Ga naar inhoud</a>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Hoofdnavigatie">
+      <a href="#" class="nav__logo" aria-label="VR Adventures — Home">
+        <img class="nav__logo-icon" src="assets/images/icon.png" alt="" width="32" height="32" aria-hidden="true">
+        <span class="nav__logo-text">VR Adventures</span>
+      </a>
+
+      <div class="nav__right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </div>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
+        <li><a href="#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
+        <li><a href="#usecases" class="nav__link" data-i18n="nav_usecases">Gelegenheden</a></li>
+        <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__video" aria-hidden="true">
+        <iframe src="https://www.youtube.com/embed/Wgr2FXt-JIo?autoplay=1&mute=1&loop=1&playlist=Wgr2FXt-JIo&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow fade-in-up">VR Adventures</p>
+        <h1 class="hero__title fade-in-up" style="animation-delay: 0.1s" data-i18n="hero_title">Wij Brengen VR<br>Naar Jouw Event</h1>
+        <p class="hero__subtitle fade-in-up" style="animation-delay: 0.2s" data-i18n="hero_subtitle">Geen locatie nodig. Geen gedoe. Wij leveren een complete free-roam VR ervaring — overal in Nederland.</p>
+        <div class="hero__ctas fade-in-up" style="animation-delay: 0.3s">
+          <a href="#contact" class="btn btn--cta btn--lg" data-i18n="hero_cta1">Boek Jouw Event</a>
+          <a href="#how-it-works" class="btn btn--outline-light" data-i18n="hero_cta2">Hoe Werkt Het?</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal" data-i18n="steps_title">Drie Stappen. Nul Gedoe.</h2>
+        <div class="steps__grid">
+          <div class="step reveal">
+            <div class="step__number">1</div>
+            <h3 class="step__title" data-i18n="step1_title">Kies Je Datum</h3>
+            <p class="step__text" data-i18n="step1_text">Vertel ons wanneer, waar en met hoeveel gasten. Wij regelen de rest.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__number">2</div>
+            <h3 class="step__title" data-i18n="step2_title">Wij Bouwen Op</h3>
+            <p class="step__text" data-i18n="step2_text">Ons team komt langs, bouwt de arena op en maakt alles speelklaar — op jouw locatie.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__number">3</div>
+            <h3 class="step__title" data-i18n="step3_title">Speel Samen</h3>
+            <p class="step__text" data-i18n="step3_text">Jouw gasten duiken in multiplayer VR werelden. 6-8 spelers per ronde, oneindig veel plezier.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiences -->
+    <section class="section section--alt" id="experiences">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal" data-i18n="exp_title">Kies Je Avontuur</h2>
+        <p class="section__subtitle reveal" data-i18n="exp_subtitle">Grote speelruimtes. Meerdere gamewerelden. Allemaal onvergetelijk.</p>
+        <div class="experiences__grid">
+          <article class="card reveal">
+            <div class="card__gallery">
+              <img class="card__image active" src="assets/images/game01.png" alt="Close-up actie in co-op VR game" width="640" height="360">
+              <img class="card__image" src="assets/images/game02.png" alt="Team van spelers vecht samen tegen zombies in VR" width="640" height="360">
+              <img class="card__image" src="assets/images/game03.png" alt="Tactisch overzicht van co-op VR gevecht" width="640" height="360">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title" data-i18n="card1_title">Samen Spelen</h3>
+              <p class="card__text" data-i18n="card1_text">Werk samen als team in spannende VR werelden. Overleef samen, bescherm elkaar en bouw aan vertrouwen — de ultieme teambuilding.</p>
+              <ul class="card__tags" aria-label="Details">
+                <li class="card__tag" data-i18n="tag_coop">Co-op</li>
+                <li class="card__tag" data-i18n="tag_teambuilding">Teambuilding</li>
+                <li class="card__tag" data-i18n="tag_together">Samen</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card__gallery">
+              <img class="card__image active" src="assets/images/pvp01.png" alt="Robots schieten op elkaar in PVP VR game" width="640" height="360">
+              <img class="card__image" src="assets/images/pvp02.png" alt="Robot karakters in een kluis vol geld" width="640" height="360">
+              <img class="card__image" src="assets/images/pvp03.png" alt="Speler richt op tegenstander in neon arena" width="640" height="360">
+            </div>
+            <div class="card__body">
+              <h3 class="card__title" data-i18n="card2_title">Tegen Elkaar</h3>
+              <p class="card__text" data-i18n="card2_text">Daag je vrienden of collega's uit in een episch gevecht. Wie is de beste? Competitief, spannend en onvergetelijk.</p>
+              <ul class="card__tags" aria-label="Details">
+                <li class="card__tag" data-i18n="tag_competitive">Competitief</li>
+                <li class="card__tag" data-i18n="tag_pvp">Team vs Team</li>
+                <li class="card__tag" data-i18n="tag_challenge">Uitdaging</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="section section--dark" id="usecases">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal" data-i18n="uc_title">Perfect Voor Elke Gelegenheid</h2>
+        <div class="usecases__grid">
+          <div class="usecase reveal">
+            <div class="usecase__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/>
+              </svg>
+            </div>
+            <h3 class="usecase__title" data-i18n="uc1_title">Bedrijfsuitjes & Teambuilding</h3>
+            <p class="usecase__text" data-i18n="uc1_text">Doorbreek het ijs en bouw banden op in virtuele werelden waar je team nog weken over praat.</p>
+          </div>
+          <div class="usecase reveal">
+            <div class="usecase__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="usecase__title" data-i18n="uc2_title">Verjaardagen & Feesten</h3>
+            <p class="usecase__text" data-i18n="uc2_text">Geef de jarige en vrienden een ervaring die ze nog nooit eerder hebben gehad.</p>
+          </div>
+          <div class="usecase reveal">
+            <div class="usecase__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3 class="usecase__title" data-i18n="uc3_title">Festivals & Beurzen</h3>
+            <p class="usecase__text" data-i18n="uc3_text">Trek publiek met een VR attractie. Wij hebben ervaring met events voor 40+ deelnemers tegelijk.</p>
+          </div>
+          <div class="usecase reveal">
+            <div class="usecase__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+              </svg>
+            </div>
+            <h3 class="usecase__title" data-i18n="uc4_title">Scholen & Jeugd</h3>
+            <p class="usecase__text" data-i18n="uc4_text">Educatief, spannend en veilig. Perfect voor schooluitjes, scouting en meer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="booking__inner reveal">
+          <h2 class="section__title section__title--center" data-i18n="book_title">Klaar Om Te Boeken?</h2>
+          <p class="booking__text" data-i18n="book_text">Vul het formulier in en wij sturen je binnen 24 uur een offerte op maat.</p>
+          <form class="booking__form" id="booking-form">
+            <div class="form__group">
+              <label class="form__label" for="field-date" data-i18n="form_date">Gewenste datum</label>
+              <input class="form__input" type="date" id="field-date" name="date" required>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="field-guests" data-i18n="form_guests">Aantal personen</label>
+              <select class="form__input form__select" id="field-guests" name="guests" required>
+                <option value="" disabled selected data-i18n="form_guests_placeholder">Selecteer...</option>
+                <option value="8-16">8 – 16</option>
+                <option value="17-32">17 – 32</option>
+                <option value="32+" data-i18n="form_guests_more">Meer dan 32</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="field-type" data-i18n="form_type">Type evenement</label>
+              <select class="form__input form__select" id="field-type" name="event_type" required>
+                <option value="" disabled selected data-i18n="form_type_placeholder">Selecteer...</option>
+                <option value="business" data-i18n="form_type_business">Bedrijfsevenement</option>
+                <option value="friends_family" data-i18n="form_type_friends">Vrienden en/of familie</option>
+                <option value="other" data-i18n="form_type_other">Anders</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="field-email" data-i18n="form_email">E-mailadres</label>
+              <input class="form__input" type="email" id="field-email" name="email" required placeholder="naam@voorbeeld.nl">
+            </div>
+            <button type="submit" class="btn btn--cta btn--lg form__submit" data-i18n="form_submit">Vraag Offerte Aan</button>
+            <p class="form__status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo-icon" src="assets/images/icon.png" alt="" width="24" height="24" aria-hidden="true">
+        <span class="footer__name">VR Adventures</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 VR Adventures. <span data-i18n="footer_rights">Alle rechten voorbehouden.</span></p>
+      <a href="#" class="footer__top" aria-label="Terug naar boven">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+        Top
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
