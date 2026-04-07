@@ -3,7 +3,7 @@
  *
  * SETUP INSTRUCTIONS:
  * 1. Create a new Google Sheet (this is where submissions land)
- * 2. Add headers in row 1: Timestamp | Date | Guests | Event Type | Email
+ * 2. Add headers in row 1: Timestamp | Date | Arenas | Package | Session Type | Event Type | Email | Handled
  * 3. Go to Extensions > Apps Script
  * 4. Paste this entire file into the script editor (replace any existing code)
  * 5. Update the SHEET_ID below with your Google Sheet's ID
@@ -25,17 +25,26 @@ function doPost(e) {
   sheet.appendRow([
     new Date(),          // Timestamp
     data.date,           // Preferred date
-    data.guests,         // Group size
+    data.arenas,         // Number of arenas
+    data.package,        // Half day / Full day
+    data.session_type,   // Convention / Standard / Immersive
     data.event_type,     // Type of event
-    data.email           // Email address
+    data.email,          // Email address
+    false                // Handled (unchecked)
   ]);
+
+  // Add checkbox to the Handled column of the new row
+  var lastRow = sheet.getLastRow();
+  sheet.getRange(lastRow, 8).insertCheckboxes();
 
   // Send email notification
   MailApp.sendEmail({
     to: 'hello@prismatic-immersive.com',
     subject: 'Nieuwe VR Adventures boeking: ' + data.email,
     body: 'Datum: ' + data.date + '\n'
-        + 'Aantal: ' + data.guests + '\n'
+        + 'Arena\'s: ' + data.arenas + '\n'
+        + 'Pakket: ' + data.package + '\n'
+        + 'Sessietype: ' + data.session_type + '\n'
         + 'Type: ' + data.event_type + '\n'
         + 'Email: ' + data.email
   });

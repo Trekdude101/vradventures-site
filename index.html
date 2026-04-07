@@ -101,6 +101,7 @@
         <li><a href="#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
         <li><a href="#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
         <li><a href="#usecases" class="nav__link" data-i18n="nav_usecases">Gelegenheden</a></li>
+        <li><a href="detail.html" class="nav__link" data-i18n="nav_detail">Meer Info</a></li>
         <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
       </ul>
     </nav>
@@ -142,8 +143,11 @@
           <div class="step reveal">
             <div class="step__number">3</div>
             <h3 class="step__title" data-i18n="step3_title">Speel Samen</h3>
-            <p class="step__text" data-i18n="step3_text">Jouw gasten duiken in multiplayer VR werelden. 6-8 spelers per ronde, oneindig veel plezier.</p>
+            <p class="step__text" data-i18n="step3_text">Jouw gasten duiken in multiplayer VR werelden. 6 spelers per ronde, oneindig veel plezier.</p>
           </div>
+        </div>
+        <div class="steps__more reveal">
+          <a href="detail.html" class="btn btn--outline" data-i18n="steps_more">Meer Weten?</a>
         </div>
       </div>
     </section>
@@ -247,12 +251,28 @@
               <input class="form__input" type="date" id="field-date" name="date" required>
             </div>
             <div class="form__group">
-              <label class="form__label" for="field-guests" data-i18n="form_guests">Aantal personen</label>
-              <select class="form__input form__select" id="field-guests" name="guests" required>
-                <option value="" disabled selected data-i18n="form_guests_placeholder">Selecteer...</option>
-                <option value="8-16">8 – 16</option>
-                <option value="17-32">17 – 32</option>
-                <option value="32+" data-i18n="form_guests_more">Meer dan 32</option>
+              <label class="form__label" for="field-arenas" data-i18n="form_arenas">Aantal arena's</label>
+              <select class="form__input form__select" id="field-arenas" name="arenas" required>
+                <option value="" disabled selected data-i18n="form_placeholder">Selecteer...</option>
+                <option value="1" data-i18n="form_arenas_1">1 arena</option>
+                <option value="2" data-i18n="form_arenas_2">2 arena's</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="field-package" data-i18n="form_package">Pakket</label>
+              <select class="form__input form__select" id="field-package" name="package" required>
+                <option value="" disabled selected data-i18n="form_placeholder">Selecteer...</option>
+                <option value="half_day" data-i18n="form_package_half">Halve dag (4 uur)</option>
+                <option value="full_day" data-i18n="form_package_full">Hele dag (8 uur)</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="field-session" data-i18n="form_session">Sessietype</label>
+              <select class="form__input form__select" id="field-session" name="session_type" required>
+                <option value="" disabled selected data-i18n="form_placeholder">Selecteer...</option>
+                <option value="convention" data-i18n="form_session_convention">Beurs (15 min)</option>
+                <option value="standard" data-i18n="form_session_standard">Standaard (20 min)</option>
+                <option value="immersive" data-i18n="form_session_immersive">Uitgebreid (30 min)</option>
               </select>
             </div>
             <div class="form__group">
