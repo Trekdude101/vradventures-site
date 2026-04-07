@@ -87,15 +87,11 @@
         <span class="nav__logo-text">VR Adventures</span>
       </a>
 
-      <div class="nav__right">
-        <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
-
-        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-          <span class="nav__toggle-bar"></span>
-        </button>
-      </div>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
 
       <ul class="nav__menu" id="nav-menu" role="list">
         <li><a href="#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
@@ -103,6 +99,7 @@
         <li><a href="#usecases" class="nav__link" data-i18n="nav_usecases">Gelegenheden</a></li>
         <li><a href="detail.html" class="nav__link" data-i18n="nav_detail">Meer Info</a></li>
         <li><a href="#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
+        <li><button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button></li>
       </ul>
     </nav>
   </header>
@@ -289,6 +286,7 @@
               <input class="form__input" type="email" id="field-email" name="email" required placeholder="naam@voorbeeld.nl">
             </div>
             <button type="submit" class="btn btn--cta btn--lg form__submit" data-i18n="form_submit">Vraag Offerte Aan</button>
+            <a href="detail.html" class="btn btn--outline btn--lg form__learn-more" data-i18n="form_learn_more">Meer Weten</a>
             <p class="form__status" id="form-status" aria-live="polite"></p>
           </form>
         </div>

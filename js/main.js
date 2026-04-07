@@ -237,6 +237,7 @@
       form_type_other: 'Other',
       form_email: 'Email address',
       form_submit: 'Request A Quote',
+      form_learn_more: 'Learn More',
 
       // Nav (shared)
       nav_detail: 'More Info',
@@ -369,6 +370,7 @@
       form_type_other: 'Anders',
       form_email: 'E-mailadres',
       form_submit: 'Vraag Offerte Aan',
+      form_learn_more: 'Meer Weten',
       // Nav (shared)
       nav_detail: 'Meer Info',
 
