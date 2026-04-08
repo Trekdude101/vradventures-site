@@ -199,6 +199,16 @@ body {
   color: var(--color-white);
 }
 
+/* When mobile menu is open, revert to dark text so it's visible on white bg */
+.site-header:not(.scrolled) .nav__menu.open {
+  color: var(--color-text);
+}
+
+.site-header:not(.scrolled) .nav__menu.open .lang-toggle {
+  border-color: var(--color-text);
+  color: var(--color-text);
+}
+
 .nav {
   display: flex;
   align-items: center;
