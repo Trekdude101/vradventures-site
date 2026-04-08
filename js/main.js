@@ -45,7 +45,9 @@
   function onScroll() {
     if (!scrollTicking) {
       window.requestAnimationFrame(function () {
-        header.classList.toggle('scrolled', window.scrollY > 50);
+        if (hasHero) {
+          header.classList.toggle('scrolled', window.scrollY > 50);
+        }
         updateActiveLink();
         scrollTicking = false;
       });
@@ -54,7 +56,14 @@
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
-  header.classList.toggle('scrolled', window.scrollY > 50);
+
+  // Pages without a full-screen hero always show the solid header
+  var hasHero = !!document.querySelector('.hero');
+  if (!hasHero) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  }
 
   // ── 3. Scroll reveal animations ─────────────────────────
   if ('IntersectionObserver' in window) {
@@ -364,6 +373,22 @@
       faq_q12: 'Can I cancel or reschedule?',
       faq_a12: 'Yes, you can cancel or reschedule free of charge up to 14 days before the event. Just get in touch and we\u2019ll find a solution together.',
 
+      // Gallery
+      nav_gallery: 'Gallery',
+      gallery_hero_title: 'Gallery',
+      gallery_hero_subtitle: 'See our VR experiences in action.',
+      gallery_game_title: 'In-Game Screenshots',
+      gallery_game_subtitle: 'This is what your guests see in VR.',
+      gallery_real_title: 'Our Events',
+      gallery_real_subtitle: 'Real photos from our on-location VR sessions.',
+      gallery_cta_title: 'Want To Experience It?',
+      gallery_cta_subtitle: 'Book VR Adventures for your event and see it for yourself.',
+
+      // Slideshow
+      slideshow_title: 'See It In Action',
+      slideshow_subtitle: 'From in-game action to real events on location.',
+      slideshow_more: 'View All Photos',
+
       // Footer
       footer_rights: 'All rights reserved.'
     },
@@ -553,6 +578,22 @@
       faq_q12: 'Kan ik annuleren of wijzigen?',
       faq_a12: 'Ja, je kunt kosteloos annuleren of wijzigen tot 14 dagen voor het event. Neem gewoon contact met ons op en we zoeken samen naar een oplossing.',
 
+      // Gallery
+      nav_gallery: 'Galerij',
+      gallery_hero_title: 'Galerij',
+      gallery_hero_subtitle: 'Bekijk onze VR ervaringen in actie.',
+      gallery_game_title: 'In-Game Screenshots',
+      gallery_game_subtitle: 'Dit is wat je gasten zien in VR.',
+      gallery_real_title: 'Onze Events',
+      gallery_real_subtitle: 'Echte foto\u2019s van onze VR sessies op locatie.',
+      gallery_cta_title: 'Zelf Ervaren?',
+      gallery_cta_subtitle: 'Boek VR Adventures voor jouw event en maak het zelf mee.',
+
+      // Slideshow
+      slideshow_title: 'Bekijk Het In Actie',
+      slideshow_subtitle: 'Van in-game actie tot echte events op locatie.',
+      slideshow_more: 'Bekijk Alle Foto\u2019s',
+
       footer_rights: 'Alle rechten voorbehouden.'
     }
   };
@@ -657,5 +698,92 @@
     bindToggle(calcArenas, 'arenas');
     bindToggle(calcPackage, 'hours');
     bindToggle(calcSession, 'sessionMin');
+  }
+
+  // ── 10. Homepage slideshow ─────────────────────────────
+  var slideshowEl = document.getElementById('homepage-slideshow');
+  if (slideshowEl && !prefersReducedMotion) {
+    var slides = slideshowEl.querySelectorAll('.slideshow__slide');
+    var dotsContainer = slideshowEl.querySelector('.slideshow__dots');
+    var slideIdx = 0;
+
+    // Create dots
+    slides.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.className = 'slideshow__dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Foto ' + (i + 1));
+      dot.addEventListener('click', function () {
+        goToSlide(i);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    var dots = dotsContainer.querySelectorAll('.slideshow__dot');
+
+    function goToSlide(idx) {
+      slides[slideIdx].classList.remove('active');
+      dots[slideIdx].classList.remove('active');
+      slideIdx = idx;
+      slides[slideIdx].classList.add('active');
+      dots[slideIdx].classList.add('active');
+    }
+
+    setInterval(function () {
+      goToSlide((slideIdx + 1) % slides.length);
+    }, 4000);
+  }
+
+  // ── 11. Gallery lightbox ────────────────────────────────
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    var lightboxImg = document.getElementById('lightbox-img');
+    var lightboxCaption = document.getElementById('lightbox-caption');
+    var lightboxClose = document.getElementById('lightbox-close');
+    var lightboxPrev = document.getElementById('lightbox-prev');
+    var lightboxNext = document.getElementById('lightbox-next');
+    var galleryItems = document.querySelectorAll('.gallery__item');
+    var lbIdx = 0;
+
+    function openLightbox(idx) {
+      lbIdx = idx;
+      var item = galleryItems[lbIdx];
+      lightboxImg.src = item.href;
+      lightboxImg.alt = item.querySelector('img').alt;
+      lightboxCaption.textContent = item.getAttribute('data-caption') || '';
+      lightbox.removeAttribute('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.setAttribute('hidden', '');
+      document.body.style.overflow = '';
+    }
+
+    galleryItems.forEach(function (item, i) {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        openLightbox(i);
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    lightboxPrev.addEventListener('click', function () {
+      openLightbox((lbIdx - 1 + galleryItems.length) % galleryItems.length);
+    });
+
+    lightboxNext.addEventListener('click', function () {
+      openLightbox((lbIdx + 1) % galleryItems.length);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (lightbox.hasAttribute('hidden')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxPrev.click();
+      if (e.key === 'ArrowRight') lightboxNext.click();
+    });
   }
 })();

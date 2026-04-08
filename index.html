@@ -82,7 +82,7 @@
   <!-- Navigation -->
   <header class="site-header" id="site-header">
     <nav class="nav container" aria-label="Hoofdnavigatie">
-      <a href="#" class="nav__logo" aria-label="VR Adventures - Home">
+      <a href="index.html" class="nav__logo" aria-label="VR Adventures - Home">
         <img class="nav__logo-icon" src="assets/images/icon.png" alt="" width="32" height="32" aria-hidden="true">
         <span class="nav__logo-text">VR Adventures</span>
       </a>
@@ -94,9 +94,10 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu" role="list">
-        <li><a href="#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
-        <li><a href="#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
+        <li><a href="index.html#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
+        <li><a href="index.html#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
         <li><a href="detail.html" class="nav__link" data-i18n="nav_detail">Meer Info</a></li>
+        <li><a href="gallery.html" class="nav__link" data-i18n="nav_gallery">Galerij</a></li>
         <li><a href="about.html" class="nav__link" data-i18n="nav_about">Over Ons</a></li>
         <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
         <li><button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button></li>
@@ -187,6 +188,38 @@
               </ul>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Slideshow -->
+    <section class="section" id="slideshow">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal" data-i18n="slideshow_title">Bekijk Het In Actie</h2>
+        <p class="section__subtitle reveal" data-i18n="slideshow_subtitle">Van in-game actie tot echte events op locatie.</p>
+        <div class="slideshow reveal" id="homepage-slideshow" aria-label="Foto slideshow">
+          <div class="slideshow__slide active">
+            <img src="assets/images/gallery/game-01.jpg" alt="Zombies in een verlaten ziekenhuis" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="slideshow__slide">
+            <img src="assets/images/gallery/real-01.jpg" alt="Spelers met VR headsets in actie" width="1280" height="961" loading="lazy">
+          </div>
+          <div class="slideshow__slide">
+            <img src="assets/images/gallery/game-05.jpg" alt="Close combat met zombie" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="slideshow__slide">
+            <img src="assets/images/gallery/real-03.jpg" alt="Groep gasten speelt samen VR" width="1280" height="961" loading="lazy">
+          </div>
+          <div class="slideshow__slide">
+            <img src="assets/images/gallery/game-09.jpg" alt="Team schiet op zombies in ziekenhuis" width="1280" height="720" loading="lazy">
+          </div>
+          <div class="slideshow__slide">
+            <img src="assets/images/gallery/real-06.jpg" alt="Setup met live scherm en VR equipment" width="960" height="1278" loading="lazy">
+          </div>
+          <div class="slideshow__dots" aria-label="Slideshow navigatie"></div>
+        </div>
+        <div class="steps__more reveal" style="margin-top: var(--space-lg);">
+          <a href="gallery.html" class="btn btn--outline" data-i18n="slideshow_more">Bekijk Alle Foto's</a>
         </div>
       </div>
     </section>
