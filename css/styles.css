@@ -729,6 +729,12 @@ body {
   box-shadow: 0 0 0 3px var(--color-accent-light);
 }
 
+.form__textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
 .form__select {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23555' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
@@ -1189,6 +1195,98 @@ body {
 
 .calc__result--highlight .calc__result-label {
   color: rgba(255, 255, 255, 0.85);
+}
+
+/* FAQ Accordion */
+.faq {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.faq__item {
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.faq__item:first-child {
+  border-top: 1px solid #E5E7EB;
+}
+
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  padding: var(--space-md) 0;
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text);
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.faq__question:hover {
+  color: var(--color-accent-hover);
+}
+
+.faq__chevron {
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.faq__question[aria-expanded="true"] .faq__chevron {
+  transform: rotate(180deg);
+}
+
+.faq__answer {
+  overflow: hidden;
+  transition: max-height var(--transition-base), padding var(--transition-base);
+}
+
+.faq__answer[hidden] {
+  display: block;
+  max-height: 0;
+  padding: 0;
+}
+
+.faq__answer:not([hidden]) {
+  max-height: 300px;
+  padding-bottom: var(--space-md);
+}
+
+.faq__answer p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+/* About page */
+.about-content {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.about-content__text {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.about-content__text:last-child {
+  margin-bottom: 0;
+}
+
+.about-link {
+  color: var(--color-accent-hover);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+.about-link:hover {
+  color: var(--color-accent);
 }
 
 /* Detail page responsive */

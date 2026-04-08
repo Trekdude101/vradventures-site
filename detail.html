@@ -43,6 +43,26 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "Wat is de minimumleeftijd om mee te doen?", "acceptedAnswer": {"@type": "Answer", "text": "Spelers moeten minimaal 13 jaar oud zijn om mee te doen. Jongere kinderen kunnen wel meekijken via het live scherm."}},
+      {"@type": "Question", "name": "Hoeveel spelers kunnen er tegelijk spelen?", "acceptedAnswer": {"@type": "Answer", "text": "Er kunnen maximaal 6 spelers per ronde tegelijk in de arena spelen. Met 2 arena's zijn dat 12 spelers tegelijk."}},
+      {"@type": "Question", "name": "Hoeveel ruimte hebben jullie nodig?", "acceptedAnswer": {"@type": "Answer", "text": "We hebben een vlakke ruimte van minimaal 10 bij 10 meter per arena nodig. Dit kan binnen of buiten zijn."}},
+      {"@type": "Question", "name": "Kan het ook buiten?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, zolang de ondergrond vlak is en het niet regent. We raden aan een overkapping of tent beschikbaar te hebben als back-up bij wisselvallig weer."}},
+      {"@type": "Question", "name": "Heb ik ervaring met VR nodig?", "acceptedAnswer": {"@type": "Answer", "text": "Nee, helemaal niet. Elke groep krijgt een korte briefing voor hun sessie. De bediening is heel intuitief en ons team staat altijd klaar om te helpen."}},
+      {"@type": "Question", "name": "Hoe lang duurt een sessie?", "acceptedAnswer": {"@type": "Answer", "text": "Dat hangt af van het gekozen sessietype: 15 minuten (beurs), 20 minuten (standaard) of 30 minuten (uitgebreid). De standaard sessie van 20 minuten is het populairst."}},
+      {"@type": "Question", "name": "Kan iemand misselijk worden van VR?", "acceptedAnswer": {"@type": "Answer", "text": "Dat komt zelden voor. Omdat onze VR free-roam is, loop je echt fysiek rond in de ruimte. Dit vermindert het risico op misselijkheid aanzienlijk ten opzichte van zittende VR ervaringen."}},
+      {"@type": "Question", "name": "Wat hebben wij zelf nodig voor de setup?", "acceptedAnswer": {"@type": "Answer", "text": "Alleen een vlakke ruimte van 10x10 meter en toegang tot \u00e9\u00e9n stroomgroep. Wij brengen alle apparatuur mee en regelen de rest."}},
+      {"@type": "Question", "name": "Hoe werkt de reistoeslag?", "acceptedAnswer": {"@type": "Answer", "text": "We rekenen een toeslag van \u20ac0,40 per kilometer vanaf onze locatie in Groningen. Dit wordt vooraf medegedeeld in de offerte, dus geen verrassingen."}},
+      {"@type": "Question", "name": "Kunnen kinderen meekijken als ze te jong zijn om te spelen?", "acceptedAnswer": {"@type": "Answer", "text": "Absoluut! We hebben een live scherm waarop iedereen kan meekijken wat de spelers in VR zien. Dat is vaak net zo vermakelijk als zelf spelen."}},
+      {"@type": "Question", "name": "Is het geschikt voor teambuilding?", "acceptedAnswer": {"@type": "Answer", "text": "Zeker! Onze co-op modus is perfect voor teambuilding. Teams moeten samenwerken om te overleven, wat zorgt voor een unieke manier om banden te versterken."}},
+      {"@type": "Question", "name": "Kan ik annuleren of wijzigen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, je kunt kosteloos annuleren of wijzigen tot 14 dagen voor het event. Neem gewoon contact met ons op en we zoeken samen naar een oplossing."}}
+    ]
+  }
+  </script>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P8H5JJZTWD"></script>
@@ -79,11 +99,11 @@
       </button>
 
       <ul class="nav__menu" id="nav-menu" role="list">
-        <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="#equipment" class="nav__link" data-i18n="detail_equipment_title">Wat Wij Meenemen</a></li>
-        <li><a href="#sessions" class="nav__link" data-i18n="detail_sessions_title">Hoe Sessies Werken</a></li>
-        <li><a href="#pricing" class="nav__link" data-i18n="detail_pricing_title">Prijzen</a></li>
-        <li><a href="index.html#contact" class="nav__link" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="index.html#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
+        <li><a href="index.html#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
+        <li><a href="detail.html" class="nav__link" data-i18n="nav_detail">Meer Info</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav_about">Over Ons</a></li>
+        <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
         <li><button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button></li>
       </ul>
     </nav>
@@ -326,8 +346,125 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal" data-i18n="faq_title">Veelgestelde Vragen</h2>
+        <div class="faq reveal">
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q1">Wat is de minimumleeftijd om mee te doen?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a1">Spelers moeten minimaal 13 jaar oud zijn om mee te doen. Jongere kinderen kunnen wel meekijken via het live scherm.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q2">Hoeveel spelers kunnen er tegelijk spelen?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a2">Er kunnen maximaal 6 spelers per ronde tegelijk in de arena spelen. Met 2 arena's zijn dat 12 spelers tegelijk.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q3">Hoeveel ruimte hebben jullie nodig?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a3">We hebben een vlakke ruimte van minimaal 10 bij 10 meter per arena nodig. Dit kan binnen of buiten zijn.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q4">Kan het ook buiten?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a4">Ja, zolang de ondergrond vlak is en het niet regent. We raden aan een overkapping of tent beschikbaar te hebben als back-up bij wisselvallig weer.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q5">Heb ik ervaring met VR nodig?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a5">Nee, helemaal niet. Elke groep krijgt een korte briefing voor hun sessie. De bediening is heel intuitief en ons team staat altijd klaar om te helpen.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q6">Hoe lang duurt een sessie?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a6">Dat hangt af van het gekozen sessietype: 15 minuten (beurs), 20 minuten (standaard) of 30 minuten (uitgebreid). De standaard sessie van 20 minuten is het populairst.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q7">Kan iemand misselijk worden van VR?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a7">Dat komt zelden voor. Omdat onze VR free-roam is, loop je echt fysiek rond in de ruimte. Dit vermindert het risico op misselijkheid aanzienlijk ten opzichte van zittende VR ervaringen.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q8">Wat hebben wij zelf nodig voor de setup?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a8">Alleen een vlakke ruimte van 10x10 meter en toegang tot één stroomgroep. Wij brengen alle apparatuur mee en regelen de rest.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q9">Hoe werkt de reistoeslag?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a9">We rekenen een toeslag van €0,40 per kilometer vanaf onze locatie in Groningen. Dit wordt vooraf medegedeeld in de offerte, dus geen verrassingen.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q10">Kunnen kinderen meekijken als ze te jong zijn om te spelen?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a10">Absoluut! We hebben een live scherm waarop iedereen kan meekijken wat de spelers in VR zien. Dat is vaak net zo vermakelijk als zelf spelen.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q11">Is het geschikt voor teambuilding?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a11">Zeker! Onze co-op modus is perfect voor teambuilding. Teams moeten samenwerken om te overleven, wat zorgt voor een unieke manier om banden te versterken. De competitieve modus is ook populair voor een gezonde onderlinge strijd.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span data-i18n="faq_q12">Kan ik annuleren of wijzigen?</span>
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq__answer" hidden>
+              <p data-i18n="faq_a12">Ja, je kunt kosteloos annuleren of wijzigen tot 14 dagen voor het event. Neem gewoon contact met ons op en we zoeken samen naar een oplossing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="container">
         <div class="booking__inner reveal">
           <h2 class="section__title section__title--center" data-i18n="detail_cta_title">Klaar Om Te Boeken?</h2>

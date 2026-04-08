@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VR Adventures | Stel Een Vraag</title>
+  <meta name="description" content="Heb je een vraag over VR Adventures? Neem contact met ons op. We helpen je graag verder.">
+
+  <!-- Canonical & Language -->
+  <link rel="canonical" href="https://vradventures.nl/contact.html">
+  <link rel="alternate" hreflang="nl" href="https://vradventures.nl/contact.html">
+  <link rel="alternate" hreflang="en" href="https://vradventures.nl/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://vradventures.nl/contact.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vradventures.nl/contact.html">
+  <meta property="og:title" content="VR Adventures | Stel Een Vraag">
+  <meta property="og:description" content="Heb je een vraag over VR Adventures? Neem contact met ons op.">
+  <meta property="og:image" content="https://vradventures.nl/assets/images/game02.jpg">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="VR Adventures">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VR Adventures | Stel Een Vraag">
+  <meta name="twitter:description" content="Heb je een vraag over VR Adventures? Neem contact met ons op.">
+  <meta name="twitter:image" content="https://vradventures.nl/assets/images/game02.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact - VR Adventures",
+    "description": "Neem contact op met VR Adventures.",
+    "url": "https://vradventures.nl/contact.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "VR Adventures",
+      "url": "https://vradventures.nl"
+    }
+  }
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P8H5JJZTWD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P8H5JJZTWD');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/icon.png">
+  <link rel="apple-touch-icon" href="assets/images/icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link" data-i18n="skip">Ga naar inhoud</a>
+
+  <!-- Navigation -->
+  <header class="site-header scrolled" id="site-header">
+    <nav class="nav container" aria-label="Hoofdnavigatie">
+      <a href="index.html" class="nav__logo" aria-label="VR Adventures - Home">
+        <img class="nav__logo-icon" src="assets/images/icon.png" alt="" width="32" height="32" aria-hidden="true">
+        <span class="nav__logo-text">VR Adventures</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu openen">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html#how-it-works" class="nav__link" data-i18n="nav_how">Hoe Werkt Het</a></li>
+        <li><a href="index.html#experiences" class="nav__link" data-i18n="nav_experiences">Ervaringen</a></li>
+        <li><a href="detail.html" class="nav__link" data-i18n="nav_detail">Meer Info</a></li>
+        <li><a href="about.html" class="nav__link" data-i18n="nav_about">Over Ons</a></li>
+        <li><a href="contact.html" class="nav__link" data-i18n="nav_contact">Contact</a></li>
+        <li><button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Mini Hero -->
+    <section class="detail-hero">
+      <div class="container">
+        <p class="hero__eyebrow fade-in-up">VR Adventures</p>
+        <h1 class="detail-hero__title fade-in-up" style="animation-delay: 0.1s" data-i18n="contact_hero_title">Stel Een Vraag</h1>
+        <p class="detail-hero__subtitle fade-in-up" style="animation-delay: 0.2s" data-i18n="contact_hero_subtitle">Benieuwd of VR Adventures iets voor jou is? Stuur ons een bericht.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section">
+      <div class="container">
+        <div class="booking__inner reveal">
+          <p class="booking__text" data-i18n="contact_text">Vul het formulier in en wij reageren zo snel mogelijk.</p>
+          <form class="booking__form" id="contact-form">
+            <div class="form__group">
+              <label class="form__label" for="contact-email" data-i18n="form_email">E-mailadres</label>
+              <input class="form__input" type="email" id="contact-email" name="email" required placeholder="naam@voorbeeld.nl">
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="contact-message" data-i18n="contact_message_label">Je vraag</label>
+              <textarea class="form__input form__textarea" id="contact-message" name="message" required rows="5" data-i18n-placeholder="contact_message_placeholder" placeholder="Waar kunnen we je mee helpen?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--cta btn--lg form__submit" data-i18n="contact_submit">Verstuur</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo-icon" src="assets/images/icon.png" alt="" width="24" height="24" aria-hidden="true">
+        <span class="footer__name">VR Adventures</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 VR Adventures. <span data-i18n="footer_rights">Alle rechten voorbehouden.</span></p>
+      <a href="#" class="footer__top" aria-label="Terug naar boven">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+        Top
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -237,6 +237,7 @@
       form_type_other: 'Other',
       form_email: 'Email address',
       form_submit: 'Request A Quote',
+      form_ask: 'Ask A Question',
       form_learn_more: 'Learn More',
 
       // Nav (shared)
@@ -307,6 +308,62 @@
       calc_per_hour: 'guests per hour',
       calc_total: 'guests total',
 
+      // Nav
+      nav_about: 'About Us',
+
+      // Contact page
+      contact_hero_title: 'Ask A Question',
+      contact_hero_subtitle: 'Curious if VR Adventures is right for you? Send us a message.',
+      contact_text: 'Fill in the form and we\u2019ll get back to you as soon as possible.',
+      contact_message_label: 'Your question',
+      contact_message_placeholder: 'How can we help you?',
+      contact_submit: 'Send',
+
+      // About page
+      about_hero_title: 'Who We Are',
+      about_hero_subtitle: 'The people behind the headsets.',
+      about_story_title: 'VR That Comes To You',
+      about_story_text1: 'VR Adventures makes free-roam virtual reality accessible to everyone. No fixed location, no expensive trips to a faraway VR centre. We come to you, build the arena, and let your guests experience something they\u2019ve never seen before.',
+      about_story_text2: 'Whether it\u2019s a corporate outing, a birthday party, a festival, or a school event: we deliver a complete VR experience at your location. All you need is a flat space and a power outlet. We handle the rest.',
+      about_mission_title: 'What Drives Us',
+      about_value1_title: 'Connecting People',
+      about_value1_text: 'VR is at its best when you do it together. We believe in experiences that bring people together, not isolate them.',
+      about_value2_title: 'Zero Hassle',
+      about_value2_text: 'We take care of everything. From setup to guidance. All you need to do is enjoy.',
+      about_value3_title: 'Unforgettable',
+      about_value3_text: 'We aim for wow moments. Every session should create a memory your guests will talk about for weeks.',
+      about_prismatic_title: 'Part of Prismatic Immersive',
+      about_prismatic_text1: 'VR Adventures is a brand of <a href="https://prismatic-immersive.com" target="_blank" rel="noopener" class="about-link">Prismatic Immersive</a>, a company specialised in immersive technology. From VR entertainment to serious VR applications and custom hardware: we know the tech inside and out.',
+      about_prismatic_text2: 'We leverage that expertise to make your event run flawlessly. Our team knows exactly how the technology works, so your guests don\u2019t have to worry about a thing.',
+
+      // FAQ
+      faq_nav: 'FAQ',
+      faq_title: 'Frequently Asked Questions',
+      faq_q1: 'What is the minimum age to participate?',
+      faq_a1: 'Players must be at least 13 years old to participate. Younger children can watch along on the live screen.',
+      faq_q2: 'How many players can play at the same time?',
+      faq_a2: 'Up to 6 players can play simultaneously in the arena per round. With 2 arenas, that\u2019s 12 players at once.',
+      faq_q3: 'How much space do you need?',
+      faq_a3: 'We need a flat space of at least 10 by 10 meters per arena. This can be indoors or outdoors.',
+      faq_q4: 'Can it be set up outdoors?',
+      faq_a4: 'Yes, as long as the surface is flat and it\u2019s not raining. We recommend having a canopy or tent available as a backup in case of unpredictable weather.',
+      faq_q5: 'Do I need VR experience?',
+      faq_a5: 'Not at all. Every group gets a short briefing before their session. The controls are very intuitive and our team is always there to help.',
+      faq_q6: 'How long does a session last?',
+      faq_a6: 'That depends on the chosen session type: 15 minutes (convention), 20 minutes (standard), or 30 minutes (immersive). The standard 20-minute session is the most popular.',
+      faq_q7: 'Can someone get motion sick from VR?',
+      faq_a7: 'That rarely happens. Because our VR is free-roam, you physically walk around the space. This significantly reduces the risk of motion sickness compared to seated VR experiences.',
+      faq_q8: 'What do we need to provide for the setup?',
+      faq_a8: 'Just a flat space of 10x10 meters and access to one power circuit. We bring all the equipment and handle the rest.',
+      faq_q9: 'How does the travel surcharge work?',
+      faq_a9: 'We charge a surcharge of \u20ac0.40 per kilometer from our location in Groningen. This is communicated upfront in the quote, so no surprises.',
+      faq_q10: 'Can children watch if they\u2019re too young to play?',
+      faq_a10: 'Absolutely! We have a live screen where everyone can watch what the players see in VR. It\u2019s often just as entertaining as playing yourself.',
+      faq_q11: 'Is it suitable for team building?',
+      faq_a11: 'Definitely! Our co-op mode is perfect for team building. Teams have to work together to survive, creating a unique way to strengthen bonds. The competitive mode is also popular for friendly rivalry.',
+      faq_q12: 'Can I cancel or reschedule?',
+      faq_a12: 'Yes, you can cancel or reschedule free of charge up to 14 days before the event. Just get in touch and we\u2019ll find a solution together.',
+
       // Footer
       footer_rights: 'All rights reserved.'
     },
@@ -370,6 +427,7 @@
       form_type_other: 'Anders',
       form_email: 'E-mailadres',
       form_submit: 'Vraag Offerte Aan',
+      form_ask: 'Stel Een Vraag',
       form_learn_more: 'Meer Weten',
       // Nav (shared)
       nav_detail: 'Meer Info',
@@ -439,6 +497,62 @@
       calc_per_hour: 'gasten per uur',
       calc_total: 'gasten totaal',
 
+      // Nav
+      nav_about: 'Over Ons',
+
+      // Contact page
+      contact_hero_title: 'Stel Een Vraag',
+      contact_hero_subtitle: 'Benieuwd of VR Adventures iets voor jou is? Stuur ons een bericht.',
+      contact_text: 'Vul het formulier in en wij reageren zo snel mogelijk.',
+      contact_message_label: 'Je vraag',
+      contact_message_placeholder: 'Waar kunnen we je mee helpen?',
+      contact_submit: 'Verstuur',
+
+      // About page
+      about_hero_title: 'Wie Wij Zijn',
+      about_hero_subtitle: 'De mensen achter de headsets.',
+      about_story_title: 'VR Die Naar Jou Toekomt',
+      about_story_text1: 'VR Adventures maakt free-roam virtual reality toegankelijk voor iedereen. Geen vaste locatie, geen dure uitstapjes naar een ver weg gelegen VR centrum. Wij komen naar jou toe, bouwen de arena op en laten jouw gasten iets beleven wat ze nog nooit eerder hebben meegemaakt.',
+      about_story_text2: 'Of het nu een bedrijfsuitje is, een verjaardagsfeest, een festival of een schoolevenement: wij leveren een complete VR ervaring op jouw locatie. Alles wat je nodig hebt is een vlakke ruimte en een stopcontact. Wij regelen de rest.',
+      about_mission_title: 'Wat Ons Drijft',
+      about_value1_title: 'Mensen Verbinden',
+      about_value1_text: 'VR is op zijn best als je het samen doet. Wij geloven in ervaringen die mensen bij elkaar brengen, niet isoleren.',
+      about_value2_title: 'Geen Gedoe',
+      about_value2_text: 'Wij nemen alles uit handen. Van opbouw tot begeleiding. Jij hoeft je alleen maar bezig te houden met genieten.',
+      about_value3_title: 'Onvergetelijk',
+      about_value3_text: 'We streven naar wow-momenten. Elke sessie moet een herinnering opleveren waar je gasten nog weken over praten.',
+      about_prismatic_title: 'Onderdeel van Prismatic Immersive',
+      about_prismatic_text1: 'VR Adventures is een merk van <a href="https://prismatic-immersive.com" target="_blank" rel="noopener" class="about-link">Prismatic Immersive</a>, een bedrijf dat gespecialiseerd is in immersive technologie. Van VR entertainment tot serious VR toepassingen en custom hardware: wij kennen de techniek van binnen en van buiten.',
+      about_prismatic_text2: 'Die expertise zetten we in om jouw event vlekkeloos te laten verlopen. Ons team weet precies hoe de techniek werkt, zodat jouw gasten zich nergens zorgen over hoeven te maken.',
+
+      // FAQ
+      faq_nav: 'FAQ',
+      faq_title: 'Veelgestelde Vragen',
+      faq_q1: 'Wat is de minimumleeftijd om mee te doen?',
+      faq_a1: 'Spelers moeten minimaal 13 jaar oud zijn om mee te doen. Jongere kinderen kunnen wel meekijken via het live scherm.',
+      faq_q2: 'Hoeveel spelers kunnen er tegelijk spelen?',
+      faq_a2: 'Er kunnen maximaal 6 spelers per ronde tegelijk in de arena spelen. Met 2 arena\u2019s zijn dat 12 spelers tegelijk.',
+      faq_q3: 'Hoeveel ruimte hebben jullie nodig?',
+      faq_a3: 'We hebben een vlakke ruimte van minimaal 10 bij 10 meter per arena nodig. Dit kan binnen of buiten zijn.',
+      faq_q4: 'Kan het ook buiten?',
+      faq_a4: 'Ja, zolang de ondergrond vlak is en het niet regent. We raden aan een overkapping of tent beschikbaar te hebben als back-up bij wisselvallig weer.',
+      faq_q5: 'Heb ik ervaring met VR nodig?',
+      faq_a5: 'Nee, helemaal niet. Elke groep krijgt een korte briefing voor hun sessie. De bediening is heel intuitief en ons team staat altijd klaar om te helpen.',
+      faq_q6: 'Hoe lang duurt een sessie?',
+      faq_a6: 'Dat hangt af van het gekozen sessietype: 15 minuten (beurs), 20 minuten (standaard) of 30 minuten (uitgebreid). De standaard sessie van 20 minuten is het populairst.',
+      faq_q7: 'Kan iemand misselijk worden van VR?',
+      faq_a7: 'Dat komt zelden voor. Omdat onze VR free-roam is, loop je echt fysiek rond in de ruimte. Dit vermindert het risico op misselijkheid aanzienlijk ten opzichte van zittende VR ervaringen.',
+      faq_q8: 'Wat hebben wij zelf nodig voor de setup?',
+      faq_a8: 'Alleen een vlakke ruimte van 10x10 meter en toegang tot \u00e9\u00e9n stroomgroep. Wij brengen alle apparatuur mee en regelen de rest.',
+      faq_q9: 'Hoe werkt de reistoeslag?',
+      faq_a9: 'We rekenen een toeslag van \u20ac0,40 per kilometer vanaf onze locatie in Groningen. Dit wordt vooraf medegedeeld in de offerte, dus geen verrassingen.',
+      faq_q10: 'Kunnen kinderen meekijken als ze te jong zijn om te spelen?',
+      faq_a10: 'Absoluut! We hebben een live scherm waarop iedereen kan meekijken wat de spelers in VR zien. Dat is vaak net zo vermakelijk als zelf spelen.',
+      faq_q11: 'Is het geschikt voor teambuilding?',
+      faq_a11: 'Zeker! Onze co-op modus is perfect voor teambuilding. Teams moeten samenwerken om te overleven, wat zorgt voor een unieke manier om banden te versterken. De competitieve modus is ook populair voor een gezonde onderlinge strijd.',
+      faq_q12: 'Kan ik annuleren of wijzigen?',
+      faq_a12: 'Ja, je kunt kosteloos annuleren of wijzigen tot 14 dagen voor het event. Neem gewoon contact met ons op en we zoeken samen naar een oplossing.',
+
       footer_rights: 'Alle rechten voorbehouden.'
     }
   };
@@ -459,6 +573,14 @@
       }
     });
 
+    var placeholderEls = document.querySelectorAll('[data-i18n-placeholder]');
+    placeholderEls.forEach(function (el) {
+      var key = el.getAttribute('data-i18n-placeholder');
+      if (strings[key] !== undefined) {
+        el.placeholder = strings[key];
+      }
+    });
+
     try { localStorage.setItem('vra-lang', lang); } catch (e) {}
   }
 
@@ -474,7 +596,35 @@
     }
   } catch (e) {}
 
-  // ── 8. Capacity calculator ──────────────────────────────
+  // ── 8. Contact form (mailto) ─────────────────────────────
+  var contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = contactForm.email.value;
+      var message = contactForm.message.value;
+      var subject = encodeURIComponent('Vraag van ' + email + ' via VR Adventures');
+      var body = encodeURIComponent('Van: ' + email + '\n\n' + message);
+      window.location.href = 'mailto:hello@prismatic-immersive.com?subject=' + subject + '&body=' + body;
+    });
+  }
+
+  // ── 9. FAQ accordion ────────────────────────────────────
+  var faqButtons = document.querySelectorAll('.faq__question');
+  faqButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      var answer = btn.nextElementSibling;
+      btn.setAttribute('aria-expanded', String(!expanded));
+      if (expanded) {
+        answer.setAttribute('hidden', '');
+      } else {
+        answer.removeAttribute('hidden');
+      }
+    });
+  });
+
+  // ── 9. Capacity calculator ──────────────────────────────
   var calcArenas  = document.getElementById('calc-arenas');
   var calcPackage = document.getElementById('calc-package');
   var calcSession = document.getElementById('calc-session');
